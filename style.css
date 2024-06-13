@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+::backdrop {
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, 
+        rgba(34,193,195,1) 0%, 
+        rgba(255,187,41,1) 100%);
+    opacity: 0.75;
+}
+
+#dialog {
+    border: none;
+    outline: none;
+    margin-top: 30vh;
+}
+
+#dialog ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#dialog li {
+    margin: 10px 0;
+}
+
+button, input[type="submit"] {
+    padding: 5px;
+    font-size: .9em;
+}
+
+#container {
+    margin:  10px auto;
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    flex: 0 1 auto;
+    background-color: rgb(229, 229, 255);      
+    border: solid #000;
+    border-width: 1px 0 0 1px;
+    background-size: contain;
+    background-position: center center;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: rgb(196, 196, 221);
+}
+
+.toad {
+    background-image: url(i/toad.png);
+}
+
+.frog {
+    background-image: url(i/frog.png);
+}
+
+#turn, #warning {
+    margin-top: 0;
+}
